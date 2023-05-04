@@ -9,6 +9,8 @@
 :root {
     /*Tipografía*/
     --font-family: 'Raleway', sans-serif;
+    /*Color de fuente secundaria*/
+    --color-fuente-secundario: #fdfdfd;
     /*Color primario boton*/
     --color-botones-primario: #2A7AE4;
     /*Color fondo cabecera*/
