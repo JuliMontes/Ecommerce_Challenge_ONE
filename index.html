@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="">
+    <title>Alura Geek | Ecommerce</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header container">
+        <div class="header__info">
+            <a class="logo__link" href="./index.html" title="Ir al inicio" tabindex="0">
+                <img class="logo" src="./assets/img/logo/Logo.svg" alt="Logo de Alura Geek">
+            </a>
+            <input class="header__input" id="buscar" name="buscar" type="text" title="Buscador de productos en la tienda." placeholder="¿Qué deseas comprar?" data-buscador tabindex="0" required>
+            <img class="header__lupa" src="./assets/img/elementos/lupa.svg" alt="Lupa para buscar">
+        </div>
+        <a class="header__boton-login" href="">Login</a>
+        <img class="header__lupa-mobile" src="./assets/img/elementos/lupa-mobile.svg" alt="Lupa para buscar">
+    </header>
+    <!-- Main -->
+    <main>
+        <!-- Banner -->
+        <secttion class="banner">
+            <div class="banner__contenido container">
+                <h1 class="banner__titulo">Alura Geek</h1>
+                <h2 class="banner__subtitulo">Mayo Promocional</h2>
+                <p class="banner__texto">Productos seleccionados con 33% de descuento</p>
+                <a class="banner__boton" href="#consolas">Ver Consolas</a>
+            </div>
+        </secttion>
+
+        <!-- Productos -->
+        <section class="seccion-productos">
+            <div class="productos container">
+                <div class="productos__container" id="star-wars">
+                    <div class="productos__head">
+                        <h2 class="productos-head__titulo">Star Wars</h2>
+                        <a class="productos-head__boton" href="">Ver todo</a>
+                    </div>
+                    <div class="productos-index" data-star-wars></div>
+                </div>
+                <div class="productos__container" id="consolas">
+                    <div class="productos__head">
+                        <h2 class="productos-head__titulo">Consolas</h2>
+                        <a class="productos-head__boton" href="">Ver todo</a>
+                    </div>
+                    <div class="productos-index" data-consolas></div>
+                </div>
+                <div class="productos__container" id="diversos">
+                    <div class="productos__head">
+                        <h2 class="productos-head__titulo">Diversos</h2>
+                        <a class="productos-head__boton" href="">Ver todo</a>
+                    </div>
+                    <div class="productos-index" data-diversos></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="seccion-menu-contacto">
+            <div class="menu-contacto container">
+                <div class="menu">
+                    <a class="logo__link" href="./index.html" title="Ir al inicio" tabindex="0">
+                        <img class="logo" src="./assets/img/logo/Logo.svg" alt="Logo de Alura Geek">
+                    </a>
+                    <ul class="menu__links">
+                        <li class="menu__link"><a href="" class="menu__enlace">Quiénes somos</a></li>
+                        <li class="menu__link"><a href="" class="menu__enlace">Política de privacidad</a></li>
+                        <li class="menu__link"><a href="" class="menu__enlace">Programa de fidelidad</a></li>
+                        <li class="menu__link"><a href="" class="menu__enlace">Nuestras tiendas</a></li>
+                        <li class="menu__link"><a href="" class="menu__enlace">Quiero ser franquiciado</a></li>
+                        <li class="menu__link"><a href="" class="menu__enlace">Anuncie aquí</a></li>
+                    </ul>
+                </div>
+                <div class="contacto">
+                    <h3 class="contacto-formulario__titulo" tabindex="0">Habla con nosotros</h3>
+                    <form action="https://formspree.io/f/mwkjwyqk" method="POST">
+                        <div class="formulario__campos">
+                            <label class="formulario__label" for="nombre" tabindex="0">Nombre</label>
+                            <input class="formulario__campo" id="nombre" name="nombre" type="text" title="Escribe tu nombre" placeholder="Nombre" required data-tipo="nombre" tabindex="0">
+                            <span class="input-message-error" tabindex="0">Por favor, completa este campo.</span>
+                        </div>
+                        <div class="formulario__campos">
+                            <label class="formulario__label" for="mensaje" tabindex="0">Escribe tu mensaje</label>
+                            <textarea class="formulario__textarea" id="mensaje" name="mensaje" title="Escribe el mensaje" placeholder="Escribe tu mensaje" minlength="20" maxlength="300" data-tipo="mensaje" tabindex="0" required></textarea>
+                            <span class="input-message-error">Por favor, completa este campo.</span>
+                        </div>
+                        <input class="formulario__boton" type="submit" name="enviar" id="boton-enviar" value="Enviar mensaje">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer__texto">Desarrollado por <a href="">Julián Andrés Montes García</a> &#169; 2023</p>
+    </footer>
+</body>
+</html>
