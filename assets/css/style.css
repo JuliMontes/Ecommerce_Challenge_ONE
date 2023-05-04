@@ -1,13 +1,27 @@
-
-html{
-	scroll-behavior: smooth;
+/*Definiendo propiedad general*/
+*,
+::before,
+::after {
+    box-sizing: border-box;
 }
 
-body{
-    font-family: 'Raleway', sans-serif;
+/*Definiendo variables genéricas*/
+:root {
+    /*Tipografía*/
+    --font-family: 'Raleway', sans-serif;
+    /*Color primario boton*/
+    --color-botones-primario: #2A7AE4;
+    /*Color fondo cabecera*/
+    --color-fondo-header: #f5f5f5;
 }
 
-.container{
+/*Definiendo propiedad smooth-scroll, tipografía y color de fuente global*/
+html {
+    font-family: var(--font-family);
+    scroll-behavior: smooth;
+}
+
+.container {
     width: 94%;
     margin: 0 auto;
 }
