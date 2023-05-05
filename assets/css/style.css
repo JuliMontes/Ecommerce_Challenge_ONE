@@ -9,12 +9,15 @@
 :root {
     /*Tipografía*/
     --font-family: 'Raleway', sans-serif;
+    /*Color de fuente primaria*/
+    --color-fuente-primaria: #464646;
     /*Color de fuente secundaria*/
     --color-fuente-secundario: #fdfdfd;
+    /*Color fondo primario*/
+    --color-fondo-primario: #f5f5f5;
     /*Color primario boton*/
     --color-botones-primario: #2A7AE4;
-    /*Color fondo cabecera*/
-    --color-fondo-header: #f5f5f5;
+
 }
 
 /*Definiendo propiedad smooth-scroll, tipografía y color de fuente global*/
