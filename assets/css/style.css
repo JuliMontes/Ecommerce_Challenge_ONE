@@ -15,8 +15,12 @@
     --color-fuente-secundario: #fdfdfd;
     /*Color fondo primario*/
     --color-fondo-primario: #f5f5f5;
+    /*Color fondo secundario*/
+    --color-fondo-secundario: #EAF2FD;
     /*Color primario boton*/
     --color-botones-primario: #2A7AE4;
+    /*Color blanco*/
+    --color-blanco: #ffffff;
 
 }
 
