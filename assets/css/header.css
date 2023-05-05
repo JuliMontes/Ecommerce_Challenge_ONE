@@ -13,6 +13,12 @@
     align-items: center;
 }
 
+.header__logo-img {
+    height: 40px;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
 .header__input{
     width: 40%;
     margin-left: 2rem;
@@ -64,6 +70,11 @@
 
     .header__info{
         width: 40%;
+    }
+
+    .header__logo-img {
+        height: 35px;
+        margin-right: 0.5rem;
     }
 
     .header__boton-login{
