@@ -110,16 +110,16 @@
 }
   
 .input-container--invalid .input {
-	border: 1px solid red;
+	border: 1px solid var(--color-alerta-primario);
 	border-radius: 7px;
 }
 
 .input-container--invalid .input-label {
-	color: red;
+	color: var(--color-alerta-primario);
 }
 
 .input-container--invalid .input-message-error {
-	color: red;
+	color: var(--color-alerta-primario);
 	display: block;
 	margin-top: 0.5rem;
 	padding-left: 0.5rem;
