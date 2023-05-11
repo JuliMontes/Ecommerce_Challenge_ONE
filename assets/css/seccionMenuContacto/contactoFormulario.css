@@ -109,12 +109,12 @@
   margin-bottom: 0.5rem;
 }
   
-.input-container--invalid .input {
+.input-container--invalid .formulario__campo {
 	border: 1px solid var(--color-alerta-primario);
 	border-radius: 7px;
 }
 
-.input-container--invalid .input-label {
+.input-container--invalid .formulario__label {
 	color: var(--color-alerta-primario);
 }
 
@@ -130,12 +130,12 @@
 	margin-bottom: 0.5rem;
 }
 
-.input-container--invalid .textarea {
-	border: 1px solid red;
+.input-container--invalid .formulario__textarea {
+	border: 1px solid var(--color-alerta-primario);
 }
 
-.textarea-container--invalid .input-label {
-	color: red;
+.textarea-container--invalid .formulario__label {
+	color: var(--color-alerta-primario);
 }
 
 .textarea-mensagem-erro {
@@ -144,7 +144,7 @@
 
 .textarea-container--invalid .textarea-mensagem-erro {
 	display: block;
-	color: red;
+	color: var(--color-alerta-primario);
 	margin-top: 0.5rem;
 	padding-left: 0.5rem;
 }
