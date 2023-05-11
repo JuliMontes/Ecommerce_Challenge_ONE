@@ -13,15 +13,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <!-- Referencia de la hoja de estilo de Css -->
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/banner.css">
-    <link rel="stylesheet" href="./assets/css/seccionArticulos.css">
-    <link rel="stylesheet" href="./assets/css/seccionMenuContacto/seccionMenuContacto.css">
-    <link rel="stylesheet" href="./assets/css/seccionMenuContacto/contactoFormulario.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
-    <title>Alura Geek | Ecommerce</title>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/login/login.css">
+    <link rel="stylesheet" href="../assets/css/seccionMenuContacto/seccionMenuContacto.css">
+    <link rel="stylesheet" href="../assets/css/seccionMenuContacto/contactoFormulario.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <title>Login | Alura Geek</title>
 </head>
 
 <body>
@@ -29,51 +28,36 @@
     <header class="header container">
         <div class="header__info">
             <a class="header__logo" href="./index.html" title="Ir al inicio" tabindex="0">
-                <img class="header__logo-img" src="./assets/img/logo/Logo.svg" alt="Logo de Alura Geek">
+                <img class="header__logo-img" src="../assets/img/logo/Logo.svg" alt="Logo de Alura Geek">
             </a>
             <input class="header__input" id="buscar" name="buscar" type="text"
                 title="Buscador de productos en la tienda." placeholder="¿Qué deseas comprar?" data-buscador
                 tabindex="0" required>
-            <img class="header__lupa" src="./assets/img/elementos/lupa.svg" alt="Lupa para buscar">
+            <img class="header__lupa" src="../assets/img/elementos/lupa.svg" alt="Lupa para buscar">
         </div>
         <a class="header__boton-login" href="./screens/login.html">Login</a>
         <img class="header__lupa-mobile" src="./assets/img/elementos/lupa-mobile.svg" alt="Lupa para buscar">
     </header>
     <!-- Main -->
     <main>
-        <!-- Banner -->
-        <section class="seccion-banner">
-            <div class="banner__contenido container">
-                <h2 class="banner__titulo">Mayo Promocional</h2>
-                <p class="banner__texto">articulos seleccionados con 33% de descuento</p>
-                <a class="banner__boton" href="#consolas">Ver Consolas</a>
-            </div>
-        </section>
-
-        <!-- Articulos -->
-        <section class="seccion-articulos">
-            <div class="articulos container">
-                <div class="articulos__container" id="star-wars">
-                    <div class="articulos__head">
-                        <h2 class="articulos__head-titulo">Star Wars</h2>
-                        <a class="articulos__head-boton" href="">Ver todo</a>
-                    </div>
-                    <div class="articulos__index" data-star-wars></div>
-                </div>
-                <div class="articulos__container" id="consolas">
-                    <div class="articulos__head">
-                        <h2 class="articulos__head-titulo">Consolas</h2>
-                        <a class="articulos__head-boton" href="">Ver todo</a>
-                    </div>
-                    <div class="articulos__index" data-consolas></div>
-                </div>
-                <div class="articulos__container" id="diversos">
-                    <div class="articulos__head">
-                        <h2 class="articulos__head-titulo">Diversos</h2>
-                        <a class="articulos__head-boton" href="">Ver todo</a>
-                    </div>
-                    <div class="articulos__index" data-diversos></div>
-                </div>
+        <!-- Main -->
+        <section class="seccion-login">
+            <div class="formulario-login container">
+                <h3 class="formulario-login__titulo">Iniciar Sesión</h2>
+                    <form action="" class="formulario-login__form">
+                        <div class="formulario__campos">
+                            <label class="formulario__label" for="usuario" tabindex="0">Escribe tu usuario</label>
+                            <input class="formulario__campo inputs" id="usuario" name="usuario" type="text" title="Escribe tu usuario" placeholder="" required data-tipo="usuario" data-form-usuario tabindex="0">
+                            <span class="input-message-error" tabindex="0">Este campo no es válido</span>
+                        </div>
+                        <div class="formulario__campos">
+                            <label class="formulario__label" for="contraseña" tabindex="0">Escribe tu contraseña</label>
+                            <input class="formulario__campo inputs input-contrasenia" id="contrasenia" name="contrasenia" type="password" title="Escribe tu contraseña" placeholder="" required data-tipo="contrasenia" data-form-contrasenia tabindex="0">
+                            <span class="input-message-error" tabindex="0">Este campo no es válido</span>
+                        </div>
+                        <input class="boton-formulario-login" type="submit" name="enviar" id="enviar-login"
+                            value="Entrar" tabindex="0">
+                    </form>
             </div>
         </section>
 
@@ -82,7 +66,7 @@
             <div class="menu-contacto container">
                 <div class="menu">
                     <a class="header__logo" href="./index.html" title="Ir al inicio" tabindex="0">
-                        <img class="header__logo-img" src="./assets/img/logo/Logo.svg" alt="Logo de Alura Geek">
+                        <img class="header__logo-img" src="../assets/img/logo/Logo.svg" alt="Logo de Alura Geek">
                     </a>
                     <ul class="menu__links">
                         <li class="menu__link"><a href="" class="menu__enlace">Quiénes somos</a></li>
@@ -98,15 +82,19 @@
                     <form action="https://formspree.io/f/mwkjwyqk" method="POST">
                         <div class="formulario__campos">
                             <label class="formulario__label" for="nombre" tabindex="0">Tu nombre</label>
-                            <input class="formulario__campo inputs" id="nombre" name="nombre" type="text" title="Escribe tu nombre" placeholder="" required data-tipo="nombre" tabindex="0">
+                            <input class="formulario__campo inputs" id="nombre" name="nombre" type="text"
+                                title="Escribe tu nombre" placeholder="" required data-tipo="nombre" tabindex="0">
                             <span class="input-message-error" tabindex="0">Por favor, completa este campo.</span>
                         </div>
                         <div class="formulario__campos">
                             <label class="formulario__label" for="mensaje" tabindex="0">Escribe tu mensaje</label>
-                            <textarea class="formulario__textarea inputs" id="mensaje" name="mensaje" title="Escribe el mensaje" placeholder="" minlength="20" maxlength="300" data-tipo="mensaje" tabindex="0" required></textarea>
+                            <textarea class="formulario__textarea inputs" id="mensaje" name="mensaje"
+                                title="Escribe el mensaje" placeholder="" minlength="20" maxlength="300"
+                                data-tipo="mensaje" tabindex="0" required></textarea>
                             <span class="input-message-error">Por favor, completa este campo.</span>
                         </div>
-                        <input class="formulario__boton" type="submit" name="enviar" id="boton-enviar" value="Enviar mensaje">
+                        <input class="formulario__boton" type="submit" name="enviar" id="boton-enviar"
+                            value="Enviar mensaje">
                     </form>
                 </div>
             </div>
@@ -118,7 +106,9 @@
         <p class="footer__texto">Desarrollado por <a href="">Julián Andrés Montes García</a> &#169; 2023</p>
     </footer>
 
-    <script src="./assets/js/app.js" type="module"></script>
+    <script src="../assets/js/app.js" type="module"></script>
+    <script src="../assets/js/login.js"></script>
+
 </body>
 
 </html>
