@@ -27,7 +27,7 @@
     <!-- Header -->
     <header class="header container">
         <div class="header__info">
-            <a class="header__logo" href="./index.html" title="Ir al inicio" tabindex="0">
+            <a class="header__logo" href="../index.html" title="Ir al inicio" tabindex="0">
                 <img class="header__logo-img" src="../assets/img/logo/Logo.svg" alt="Logo de Alura Geek">
             </a>
             <input class="header__input" id="buscar" name="buscar" type="text"
@@ -55,8 +55,7 @@
                             <input class="formulario__campo inputs input-contrasenia" id="contrasenia" name="contrasenia" type="password" title="Escribe tu contraseña" placeholder="" required data-tipo="contrasenia" data-form-contrasenia tabindex="0">
                             <span class="input-message-error" tabindex="0">Este campo no es válido</span>
                         </div>
-                        <input class="boton-formulario-login" type="submit" name="enviar" id="enviar-login"
-                            value="Entrar" tabindex="0">
+                        <input class="formulario__boton-login" type="submit" name="enviar" id="enviar-login" value="Entrar">
                     </form>
             </div>
         </section>
@@ -93,8 +92,7 @@
                                 data-tipo="mensaje" tabindex="0" required></textarea>
                             <span class="input-message-error">Por favor, completa este campo.</span>
                         </div>
-                        <input class="formulario__boton" type="submit" name="enviar" id="boton-enviar"
-                            value="Enviar mensaje">
+                        <input class="formulario__boton-login" type="submit" name="enviar" id="enviar-login" value="Entrar">
                     </form>
                 </div>
             </div>
@@ -108,7 +106,8 @@
 
     <script src="../assets/js/app.js" type="module"></script>
     <script src="../assets/js/login.js"></script>
-
+    <script src="../controllers/busqueda.controller.js" type="module"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
