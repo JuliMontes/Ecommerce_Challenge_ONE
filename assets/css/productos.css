@@ -1,7 +1,7 @@
 .star_wars__productos,
 .consolas__productos,
 .diversos__productos,
-.productos_admin,
+.productos__admin,
 .producto_similares,
 .productos_index{
     display: grid;
@@ -24,7 +24,7 @@
 }
 
 .producto__card__titulo{
-    color: #464646;
+    color: var(--color-fuente-primaria);
 }
 
 .producto__card__precio{
@@ -32,7 +32,7 @@
 }
 
 .producto__card__boton{
-    color: #2A7AE4;
+    color: var(--color-botones-primario);
     font-weight: 800;
 }
 
@@ -40,7 +40,7 @@
     height: 30vh;
     font-weight: 700;
     font-size: 2rem;
-    color: #464646;
+    color: var(--color-fuente-primaria);
 }
 
 /* ------------------------------------ */
