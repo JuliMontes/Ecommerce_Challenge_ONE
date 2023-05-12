@@ -25,6 +25,7 @@
 	border: none;
 	box-sizing: border-box;
 	border-bottom: 1px solid var(--color-botones-primario);
+	border-radius: 7px;
 	padding: 1.875rem 0.5rem 0.5rem;
 	height: 3.25rem;
 	width: 100%;
