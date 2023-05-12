@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Referencia al logo-icono -->
+    <link rel="icon" href="../assets/img/logo/Icon.svg">
+    <!-- Fuente del Proyecto Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Referencia de la hoja de estilo de Css -->
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/seccionArticulos.css">
+    <link rel="stylesheet" href="../assets/css/productos/adminProductos.css">
+    <link rel="stylesheet" href="../assets/css/productos.css">
+    <link rel="stylesheet" href="../assets/css/seccionMenuContacto/seccionMenuContacto.css">
+    <link rel="stylesheet" href="../assets/css/seccionMenuContacto/contactoFormulario.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Agregar producto | Alura Geek</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header container">
+        <div class="header__info">
+            <a class="header__logo" href="../index.html" title="Ir al inicio" tabindex="0">
+                <img class="header__logo-img" src="../assets/img/logo/Logo.svg" alt="Logo de Alura Geek">
+            </a>
+            <input class="header__input" id="buscar" name="buscar" type="text"
+                title="Buscador de productos en la tienda." placeholder="¿Qué deseas comprar?" data-buscador
+                tabindex="0" required>
+            <img class="header__lupa" src="../assets/img/elementos/lupa.svg" alt="Lupa para buscar">
+        </div>
+        <a class="header__boton-login" href="./login.html">Login</a>
+        <img class="header__lupa-mobile" src="./assets/img/elementos/lupa-mobile.svg" alt="Lupa para buscar">
+    </header>
+    <!-- Main -->
+    <main>
+
+        <!------------------------------------->
+        <!-------------- AGREGAR -------------->
+        <!------------------------------------->
+
+        <div class="formulario">
+            <div class="formulario-login container">
+                <h3 class="formulario-login__titulo">Agregar nuevo producto</h2>
+                    <form action="" class="formulario-login_form" data-form-registro>
+                        <div class="imagen">
+                            <div class="imagen-drop" data-drag-area>
+                                <img class="imagen-drop-img" src="../assets/img/Vector-imagen.svg"
+                                    alt="icono agrega imagen">
+                                <img class="imagen-drop-img__pantalla-mobile"
+                                    src="../assets/img/Vector-imagen_mobile.svg" alt="icono agrega imagen">
+                                <p class="imagen-drop-texto">Arrastre para agregar una imagen para el producto</p>
+                            </div>
+                            <p class="texto_o">O</p>
+                            <div class="imagen-boton">
+                                <label for="agregar__imagen__boton" class="agregar__imagen__boton__texto">Busque en su
+                                    dispositivo</label>
+                                <input type="file" name="imagen" id="agregar__imagen__boton"
+                                    class="agregar__imagen__boton" name="fileinput" />
+                            </div>
+                        </div>
+                        <div class="formulario-login__input-container">
+                            <input name="producto" id="producto" class="input inputs" type="text" placeholder=""
+                                required data-tipo="nombreProducto" pattern="^[\s\S]{0,40}$" data-form-producto-nombre>
+                            <label class="input-label" for="producto">Nombre del producto</label>
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                        <div class="formulario-login__input-container">
+                            <input name="precio" id="precio" class="input input-precio inputs" type="text"
+                                placeholder="" required data-tipo="precioProducto" pattern="[0-9]*"
+                                data-form-producto-precio>
+                            <label class="input-label" for="precio">Precio del producto</label>
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                        <div class="formulario-login__select">
+                            <p>Categoria</p>
+                            <select class="select-css" data-form-producto-categoria>
+                                <option>Elige una Categoria</option>
+                                <option>Star wars</option>
+                                <option>Consolas</option>
+                                <option>Diversos</option>
+                            </select>
+                        </div>
+                        <div class="formulario__textarea-container">
+                            <textarea name="descripcion" id="descripcion" class="textarea inputs" rows="5" type="text"
+                                placeholder="" required data-tipo="descripcionProducto" maxlength="300"
+                                data-form-producto-descripcion></textarea>
+                            <label class="input-label" for="descripcion">Descripcion del producto</label>
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                        <input class="boton-formulario-login" type="submit" name="enviar" id="enviar"
+                            value="Agregar Producto">
+                    </form>
+            </div>
+        </div>
+
+        <!-- Contacto -->
+        <section class="seccion-menu-contacto">
+            <div class="menu-contacto container">
+                <div class="menu">
+                    <a class="header__logo" href="../index.html" title="Ir al inicio" tabindex="0">
+                        <img class="header__logo-img" src="../assets/img/logo/Logo.svg" alt="Logo de Alura Geek">
+                    </a>
+                    <ul class="menu__links">
+                        <li class="menu__link"><a href="" class="menu__enlace">Quiénes somos</a></li>
+                        <li class="menu__link"><a href="" class="menu__enlace">Política de privacidad</a></li>
+                        <li class="menu__link"><a href="" class="menu__enlace">Programa de fidelidad</a></li>
+                        <li class="menu__link"><a href="" class="menu__enlace">Nuestras tiendas</a></li>
+                        <li class="menu__link"><a href="" class="menu__enlace">Quiero ser franquiciado</a></li>
+                        <li class="menu__link"><a href="" class="menu__enlace">Anuncie aquí</a></li>
+                    </ul>
+                </div>
+                <div class="contacto">
+                    <h3 class="contacto-formulario__titulo" tabindex="0">Habla con nosotros</h3>
+                    <form action="https://formspree.io/f/mwkjwyqk" method="POST">
+                        <div class="formulario__campos">
+                            <label class="formulario__label" for="nombre" tabindex="0">Tu nombre</label>
+                            <input class="formulario__campo inputs" id="nombre" name="nombre" type="text"
+                                title="Escribe tu nombre" placeholder="" required data-tipo="nombre" tabindex="0">
+                            <span class="input-message-error" tabindex="0">Por favor, completa este campo.</span>
+                        </div>
+                        <div class="formulario__campos">
+                            <label class="formulario__label" for="mensaje" tabindex="0">Escribe tu mensaje</label>
+                            <textarea class="formulario__textarea inputs" id="mensaje" name="mensaje"
+                                title="Escribe el mensaje" placeholder="" minlength="20" maxlength="300"
+                                data-tipo="mensaje" tabindex="0" required></textarea>
+                            <span class="input-message-error">Por favor, completa este campo.</span>
+                        </div>
+                        <input class="formulario__boton" type="submit" name="enviar" id="boton-enviar"
+                            value="Enviar mensaje">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!----------------------------------->
+    <!-------------- FOOTER ------------->
+    <!----------------------------------->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer__texto">Desarrollado por <a href="">Julián Andrés Montes García</a> &#169; 2023</p>
+    </footer>
+
+    <script src="../assets/js/app.js" type="module"></script>
+    <script src="../controllers/busquedaController.js" type="module"></script>
+    <script src="../controllers/agregarController.js" type="module"></script>
+    <script src="../assets/js/gradDropImg.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+        integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
