@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/productos/agregarProducto.css">
+    <link rel="stylesheet" href="../assets/css/login/login.css">
     <link rel="stylesheet" href="../assets/css/seccionArticulos.css">
     <link rel="stylesheet" href="../assets/css/productos/adminProductos.css">
     <link rel="stylesheet" href="../assets/css/productos.css">
@@ -43,21 +45,17 @@
     </header>
     <!-- Main -->
     <main>
-
-        <!------------------------------------->
-        <!-------------- AGREGAR -------------->
-        <!------------------------------------->
-
-        <div class="formulario">
+        <!-- Agregar Producto -->
+        <section class="seccion-formulario">
             <div class="formulario-login container">
                 <h3 class="formulario-login__titulo">Agregar nuevo producto</h2>
-                    <form action="" class="formulario-login_form" data-form-registro>
+                    <form action="" class="formulario-login__form" data-form-registro>
                         <div class="imagen">
                             <div class="imagen-drop" data-drag-area>
-                                <img class="imagen-drop-img" src="../assets/img/Vector-imagen.svg"
+                                <img class="imagen-drop-img" src="../assets/img/elementos/imagen.svg"
                                     alt="icono agrega imagen">
                                 <img class="imagen-drop-img__pantalla-mobile"
-                                    src="../assets/img/Vector-imagen_mobile.svg" alt="icono agrega imagen">
+                                    src="../assets/img/elementos/imagen_mobile.svg" alt="icono agrega imagen">
                                 <p class="imagen-drop-texto">Arrastre para agregar una imagen para el producto</p>
                             </div>
                             <p class="texto_o">O</p>
@@ -68,29 +66,26 @@
                                     class="agregar__imagen__boton" name="fileinput" />
                             </div>
                         </div>
-                        <div class="formulario-login__input-container">
-                            <input name="producto" id="producto" class="input inputs" type="text" placeholder=""
-                                required data-tipo="nombreProducto" pattern="^[\s\S]{0,40}$" data-form-producto-nombre>
-                            <label class="input-label" for="producto">Nombre del producto</label>
-                            <span class="input-message-error">Este campo no es valido</span>
+                        <div class="formulario__campos">
+                            <label class="formulario__label" for="producto" tabindex="0">Nombre del producto</label>
+                            <input class="formulario__campo inputs" id="producto" name="producto" type="text" title="Escribe el nombre del producto" placeholder="" required data-tipo="nombreProducto" pattern="^[\s\S]{0,40}$" data-form-producto-nombre tabindex="0">
+                            <span class="input-message-error" tabindex="0">Este campo no es valido</span>
                         </div>
-                        <div class="formulario-login__input-container">
-                            <input name="precio" id="precio" class="input input-precio inputs" type="text"
-                                placeholder="" required data-tipo="precioProducto" pattern="[0-9]*"
-                                data-form-producto-precio>
-                            <label class="input-label" for="precio">Precio del producto</label>
-                            <span class="input-message-error">Este campo no es valido</span>
+                        <div class="formulario__campos">
+                            <label class="formulario__label" for="precio" tabindex="0">Precio del producto</label>
+                            <input class="formulario__campo inputs input-precio" id="precio" name="precio" type="text" title="Escribe el precio del producto" placeholder="" required data-tipo="precioProducto" pattern="[0-9]*" data-form-producto-precio tabindex="0">
+                            <span class="input-message-error" tabindex="0">Este campo no es valido</span>
                         </div>
                         <div class="formulario-login__select">
                             <p>Categoria</p>
                             <select class="select-css" data-form-producto-categoria>
                                 <option>Elige una Categoria</option>
-                                <option>Star wars</option>
+                                <option>Star Wars</option>
                                 <option>Consolas</option>
                                 <option>Diversos</option>
                             </select>
                         </div>
-                        <div class="formulario__textarea-container">
+                        <div class="formulario__campos">
                             <textarea name="descripcion" id="descripcion" class="textarea inputs" rows="5" type="text"
                                 placeholder="" required data-tipo="descripcionProducto" maxlength="300"
                                 data-form-producto-descripcion></textarea>
@@ -101,7 +96,7 @@
                             value="Agregar Producto">
                     </form>
             </div>
-        </div>
+        </section>
 
         <!-- Contacto -->
         <section class="seccion-menu-contacto">
