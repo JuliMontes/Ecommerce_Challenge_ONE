@@ -10,7 +10,7 @@ const MostrarProductosAdmin = (nombre, precio, descripcion, imagen, id, categori
     const contenido = `
   <div class="producto__card__imagen" style="background-Image: url(${imagen})">
     <a class="boton-eliminar" id="${id}" href="#"><img src="../assets/img/elementos/eliminar-boton.svg" alt="boton eliminar"></a>
-    <a class="boton-editar" href="../screens/editar-producto.html?id=${id}"><img src="../assets/img/elementos/editar-boton.svg" alt="boton editar"></a>
+    <a class="boton-editar" href="../screens/editarProducto.html?id=${id}"><img src="../assets/img/elementos/editar-boton.svg" alt="boton editar"></a>
   </div>
   <h3 class="producto__card__titulo">${nombre}</h3>
   <p class="producto__card__precio">${precio}</p>
