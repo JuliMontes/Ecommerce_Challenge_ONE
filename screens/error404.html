@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Referencia al logo-icono -->
+    <link rel="icon" href="../assets/img/logo/Icon.svg">
+    <!-- Fuente del Proyecto Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Referencia de la hoja de estilo de Css -->
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/error404.css">
+    <link rel="stylesheet" href="../assets/css/login/login.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <title>Error 404 | Alura Geek</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header container">
+        <div class="header__info">
+            <a class="header__logo" href="../index.html" title="Ir al inicio" tabindex="0">
+                <img class="header__logo-img" src="../assets/img/logo/Logo.svg" alt="Logo de Alura Geek">
+            </a>
+            <input class="header__input" id="buscar" name="buscar" type="text"
+                title="Buscador de productos en la tienda." placeholder="¿Qué deseas comprar?" data-buscador
+                tabindex="0" required>
+            <img class="header__lupa" src="../assets/img/elementos/lupa.svg" alt="Lupa para buscar">
+        </div>
+        <a class="header__boton-login" href="./login.html">Login</a>
+        <img class="header__lupa-mobile" src="../assets/img/elementos/lupa-mobile.svg" alt="Lupa para buscar">
+    </header>
+    <!-- Main -->
+    <main class="container">
+        <div class="informacion__error">
+            <div class="informacion__error__imagen">
+                <img src="../assets/img/elementos/error404.jpg" alt="Error 404 imagen">
+            </div>
+            <div class="informacion__error__contenido">
+                <h1 class="informacion__error__contenido__titulo">Lo sentimos</h1>
+                <p class="informacion__error__contenido__texto">La pagina que estas buscando ha sido removida o esta
+                    temporalmente inhabilitada</p>
+                <a class="informacion__error__contenido__boton" href="../index.html">Regresar al Inicio</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer__texto">Desarrollado por <a href="">Julián Andrés Montes García</a> &#169; 2023</p>
+    </footer>
+
+</body>
+
+</html>
