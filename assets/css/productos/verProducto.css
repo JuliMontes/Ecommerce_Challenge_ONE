@@ -12,8 +12,15 @@
 
 .producto__imagen {
     width: 30%;
-    border-radius: 7px;
     /* height: 437px; */
+    border-radius: 7px;
+    transition: 0.7s;
+}
+
+.producto__imagen:hover {
+    box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.35);
+    transform: translateY(-0.5rem);
+    transition: 0.7s;
 }
 
 .producto__info {

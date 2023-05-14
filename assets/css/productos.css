@@ -2,41 +2,49 @@
 .consolas__productos,
 .diversos__productos,
 .productos__admin,
-.producto_similares,
-.productos_index{
+.productos__similares,
+.productos_index {
     display: grid;
     gap: 1rem;
     grid-auto-rows: 22rem;
     grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
 }
 
-.producto__card__imagen{
+.producto__card__imagen {
     height: 279px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 7px;
+    transition: 0.7s;
+}
+
+.producto__card__imagen:hover {
+    box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.35);
+    transform: translateY(-0.5rem);
+    transition: 0.7s;
 }
 
 .producto__card__imagen,
 .producto__card__titulo,
-.producto__card__precio{
+.producto__card__precio {
     margin-bottom: .5rem;
 }
 
-.producto__card__titulo{
+.producto__card__titulo {
     color: var(--color-fuente-primaria);
 }
 
-.producto__card__precio{
+.producto__card__precio {
     font-weight: 800;
 }
 
-.producto__card__boton{
+.producto__card__boton {
     color: var(--color-botones-primario);
     font-weight: 800;
 }
 
-.productos__resultados_mensaje{
+.productos__resultados_mensaje {
     height: 30vh;
     font-weight: 700;
     font-size: 2rem;
@@ -47,17 +55,15 @@
 /* ----- Responsive para Mobiles ------ */
 /* ------------------------------------ */
 
-@media only screen and (max-width: 767px){
-
-}
+@media only screen and (max-width: 767px) {}
 
 /* ------------------------------------ */
 /* ----- Responsive para Tablets ------ */
 /* ------------------------------------ */
 
-@media (min-width:768px) and (max-width:1024px){
+@media (min-width:768px) and (max-width:1024px) {
 
-    .productos__resultados_mensaje{
+    .productos__resultados_mensaje {
         height: 48vh;
     }
 
