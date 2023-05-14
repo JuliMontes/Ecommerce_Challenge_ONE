@@ -7,7 +7,7 @@ const mostrarProductosRelacionados = (nombre, precio, descripcion, imagen, id, c
     cardProducto.className = "producto__card";
     const contenido = `
     <div class="producto__card__imagen" style="background-Image: url(${imagen})"></div>
-    <h3 class="producto__card__titulo">${nombre}</h3>
+    <h1 class="producto__card__titulo">${nombre}</h1>
     <p class="producto__card__precio">${precio}</p>
     <a class="producto__card__boton" href="../screens/ver-producto.html?id=${id}">Ver producto</a>
   `
